@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cootutoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+</head>
+<body>
+
+    <!-- INÍCIO -->
+    <section id="inicio">
+        <div>
+            <h3 data-aos="fade-right">Cotutoria em <br> <span>Enfermagem</span> </h3> 
+            <p data-aos="fade-top">Ajudamos-lhe a digitalizar e organizar os seus trabalhos <br class="quebra">
+            académicos de qualquer área da Enfermagem</p>
+            <br> 
+            <a  data-aos="fade-top" class="bolha" href="#sobre">Sobre</a> 
+            <a data-aos="fade-right" class="reta" href="#">Solicitar Trabalho <i class="ri-whatsapp-line"></i> </a>
+            <img data-aos="fade-left" src="imagem.png" >
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div id="div_sobre"  data-aos="fade-left">
+            <h3>Sobre o Trabalho</h3>
+            <p class="sobre_p">Os trabalhos são organizados por enfermeiros com esperiencia 
+            profissional e técnica.  Garantimos que seu trabalho será exclusivo.</p> <br>
+            <p class="sobre_p"> <strong>Com os nossos serviços, ajudamos-lhe a gastar menos de 40% do que 
+            é cobrado em Cybers locais. A cobrança é de acordo com o número de páginas, 
+            pode fazer o calculo abaixo...</strong>
+             </p> <br> <br> 
+
+            <div>
+                <div id="campo">
+                    <input type="number" oninput="calcular_preco()" placeholder="Escreva aqui..." id="pag"> 
+                    <p>pag</p>
+                </div>
+                <p id="preco"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTA -->
+    <section id="nota">
+        <div  data-aos="fade-right" >
+            <h3> <i class="ri-information-2-line"></i> NOTA</h3>
+            <p>Após o término do trabalho, ele será enviado pelo WhatsApp no formato .word ou .pdf 
+            pronto para impreensão. Há vários lugares onde pode imprimir o seu trabalho em alta qualidade
+            e a um preço razoavel. <br> <br>
+            Para saber mais, solicite um trabalho no WhatsApp <br class="quebra2"> <br class="quebra2"> <a class="reta " href="">Solicitar trabalho <i class="ri-whatsapp-line"></i></a> </p>
+        </div>
+      
+    </section>
+
+    <!-- DADOS -->
+    <section id="dados">
+        <div id="dados_div">
+            <div class="info">
+             <p class="logo">MPINDI SOFT</p>
+             <p>Contacto: +244 929 12 97 97 <i></i> </p>
+             <p>sebastiaompindi@gmail.com <i></i></p>
+            </div>
+            <div class="info">
+             <a class="ri-home-4-fill" href="#inicio"></a>  <br> <br>
+             <a class="ri-whatsapp-line"></a> 
+            </div>
+         </div>
+    </section>
+
+    <script src="script.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+
+</body>
+</html>
