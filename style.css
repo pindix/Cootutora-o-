@@ -87,7 +87,7 @@ box-shadow: 0 0 0.5rem white;
     background: none; 
     border: solid 2px white; border-radius: 20px;
     padding: 0.5rem 2rem 0.5rem 0.5rem; 
-    outline: none; width: 8rem;
+    outline: none; width: 9rem;
     color: white; 
     transition: 0.3s;
 } #pag::placeholder{ color: lightblue;}
@@ -177,7 +177,7 @@ i {
         width: 90%;
     }
     #inicio div {
-        height: 30rem;
+        height: 35rem;
         top: 40%;
     }
     img {
