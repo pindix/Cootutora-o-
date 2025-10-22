@@ -60,11 +60,6 @@ img {
   visibility: visible;
 }
 
-
-
-
-    
-    
 .pop-up {
     position: relative;
 }
@@ -238,7 +233,11 @@ i {
     .quebra {display: none;}
     .quebra2 {display: block;}
 }
-
+@media (height < 710px){
+    #inicio {
+        min-height: 710px;
+    }
+}
 
 
 
