@@ -39,3 +39,26 @@ function fechar_solicitacao(){
 
 window.addEventListener('scroll', fechar_solicitacao); 
 
+
+
+function ajustarAOS() {
+  const tema = document.getElementById('tema');
+    const a_sobre = document.getElementById('a_sobre');
+    const a_solicitar = document.getElementById('a_solicitar');
+    const texto = document.getElementById('texto');
+  if (window.innerHeight < 710) {
+    tema.removeAttribute('data-aos');
+      a_sobre.removeAttribute('data-aos');
+      a_solicitar.removeAttribute('data-aos');
+      texto.removeAttribute('data-aos');
+  } else {
+    tema.setAttribute('data-aos', 'fade-right');
+      a_sobre.setAttribute('data-aos', 'fade-top');
+      a_solicitar.setAttribute('data-aos', 'fade-top');
+      texto.setAttribute('data-aos', 'fade-top');
+  }
+  AOS.refresh();
+}
+
+window.addEventListener('resize', ajustarAOS);
+ajustarAOS(); // roda uma vez ao carregar
