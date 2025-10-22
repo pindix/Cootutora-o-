@@ -14,15 +14,27 @@
 
     <!-- INÍCIO -->
     <section id="inicio">
-        <div>
+        <div class="inicio_div" id="foco">
             <h3 data-aos="fade-right">Cotutoria em <br> <span>Enfermagem</span> </h3> 
-            <p data-aos="fade-top">Ajudamos-lhe a digitalizar e organizar os seus trabalhos <br class="quebra">
-            académicos de qualquer área da Enfermagem</p>
+            <p data-aos="fade-top">Espaço criado para apoiar estudantes de Enfermagem com a edição, organização e formatação de trabalhos académicos. </p>
             <br> 
             <a  data-aos="fade-top" class="bolha" href="#sobre">Sobre</a> 
-            <a data-aos="fade-right" class="reta" href="#">Solicitar Trabalho <i class="ri-whatsapp-line"></i> </a>
+            <a onclick="solicitar()" data-aos="fade-right" class="reta" href="#">Solicitar Trabalho <i class="ri-whatsapp-line"></i> </a>
             <img data-aos="fade-left" src="imagem.png" >
         </div>
+
+        <!-- POP-UP -->
+        <div class="pop_up" id="pop_up">
+            <i onclick="fechar_solicitacao()" class="ri-close-circle-fill"></i>
+            <p id="valor">É necessário pagar 50% antes de começarmos o trabalho.</p>
+            <br>
+            <a href="https://wa.me/244929129797?text=Olá%2C%20gostaria de solicitar %20um%20trabalho%20e%20entender%20melhor%20como%20as%20coisas%20vão%20funcionar." >Concordo. Solicitar</a>
+        </div>
+        <!-- POP-UP -->
+
+
+
+
     </section>
 
     <!-- SOBRE -->
@@ -30,15 +42,14 @@
         <div id="div_sobre"  data-aos="fade-left">
             <h3>Sobre o Trabalho</h3>
             <p class="sobre_p">Os trabalhos são organizados por enfermeiros com esperiencia 
-            profissional e técnica.  Garantimos que seu trabalho será exclusivo.</p> <br>
-            <p class="sobre_p"> <strong>Com os nossos serviços, ajudamos-lhe a gastar menos de 40% do que 
-            é cobrado em Cybers locais. A cobrança é de acordo com o número de páginas, 
-            pode fazer o calculo abaixo...</strong>
+            profissional e técnica.  Garantimos-lhe exclusividade.</p> <br>
+            <p class="sobre_p"> <strong>Ajudamos-lhe a gastar menos de 40% do que gasta em Cybers locais. 
+                Digite o número de páginas que quer e saiba o preço.</strong>
              </p> <br> <br> 
 
             <div>
                 <div id="campo">
-                    <input type="number" oninput="calcular_preco()" placeholder="Escreva aqui..." id="pag"> 
+                    <input type="number" oninput="calcular_preco()" placeholder="Digite aqui..." id="pag"> 
                     <p>pag</p>
                 </div>
                 <p id="preco"></p>
@@ -53,14 +64,14 @@
             <p>Após o término do trabalho, ele será enviado pelo WhatsApp no formato .word ou .pdf 
             pronto para impreensão. Há vários lugares onde pode imprimir o seu trabalho em alta qualidade
             e a um preço razoavel. <br> <br>
-            Para saber mais, solicite um trabalho no WhatsApp <br class="quebra2"> <br class="quebra2"> <a class="reta " href="">Solicitar trabalho <i class="ri-whatsapp-line"></i></a> </p>
+            Para saber mais, solicite um trabalho no WhatsApp <br class="quebra2"> <br class="quebra2"> <a class="reta " href="#inicio" onclick="chamar()">Solicitar trabalho <i class="ri-whatsapp-line"></i></a> </p>
         </div>
       
     </section>
 
     <!-- DADOS -->
-    <section id="dados">
-        <div id="dados_div">
+    <section id="dados" >
+        <div id="dados_div" >
             <div class="info">
              <p class="logo">MPINDI SOFT</p>
              <p>Contacto: +244 929 12 97 97 <i></i> </p>
@@ -68,7 +79,7 @@
             </div>
             <div class="info">
              <a class="ri-home-4-fill" href="#inicio"></a>  <br> <br>
-             <a class="ri-whatsapp-line"></a> 
+             <a class="ri-whatsapp-line" href="#inicio" onclick="chamar()"></a> 
             </div>
          </div>
     </section>
