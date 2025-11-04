@@ -1,10 +1,16 @@
-function calcular_preco(){
-    const pag = parseFloat(document.getElementById("pag").value);
-    const preco = document.getElementById("preco");
+function calcular_preco() {
+  const pag = Number(document.getElementById("pag").value);
+  const preco = document.getElementById("preco");
 
-    if (pag > ""){
-        preco.innerHTML = `${pag} páginas custam ${Math.round((pag*200)*0.35)} KZ`;
-    } else {preco.innerHTML = ""}
+  if (pag > 0 && pag < 30) {
+    preco.innerHTML = `${pag} páginas custam ${Math.round((pag * 200) * 0.35)} KZ`;
+  } else if (pag >= 30 && pag <= 70) {
+    preco.innerHTML = `15.000 KZ se for um Trabalho de Fim do Curso. Fale conosco no Whatsapp para nos informar sobre o trabalho.`;
+  } else if (pag > 70) {
+    preco.innerHTML = `Não fazemos trabalhos com esse número de páginas.`;
+  } else {
+    preco.innerHTML = "";
+  }
 }
 
 
