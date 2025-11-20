@@ -34,9 +34,10 @@ html {
     height: 35rem;
 }
 
-img {
-    width: 80%; height: 60%; position: absolute;
-    bottom: 0; right: 0; z-index: -1;
+
+#bg-video {
+    width: 100%; height: 60%; position: absolute;
+    bottom: 0; right: 0; object-fit: cover;
 }
 
 
@@ -80,10 +81,10 @@ img {
 }
 #inicio h3 {
     color: lightblue; font-size: 40px;
-    font-weight: 900;
+    font-weight: 900;line-height: 2rem;
 }
 #inicio span {
-    color: white;
+    color: white;font-size: 23px; letter-spacing: 3.5px;
 }
 .inicio_div p {
     color: white; margin-top: 15px;
@@ -108,7 +109,7 @@ a:hover {
     position: relative; height: fit-content;
     background: linear-gradient(180deg, #001a33, #000f26);
     padding-bottom: 1rem;
-    padding-top: 5px;
+    padding-top: 0;
 }
 #div_sobre {
     margin: auto;
@@ -224,11 +225,11 @@ i {
         width: 90%;
     }
     .inicio_div {
-        height: 25rem;
-        top: 40%;
+        height: 35rem;
+        top: 50%;
     }
     img {
-        height: 60%;
+        height: 50%;
     }
     .quebra {display: none;}
     .quebra2 {display: block;}
