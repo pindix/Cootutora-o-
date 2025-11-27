@@ -240,7 +240,7 @@ i {
         top: 50%;
     }
     .inicio_div p {
-        font-size: 22px;
+        font-size: 18px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -270,7 +270,7 @@ i {
         font-size: 44px;
     }
     #sobre p, #pag {
-        font-size: 22px;
+        font-size: 18px;
     }
     #pag {
         width: 12rem;
@@ -281,7 +281,7 @@ i {
         padding: 1rem;
     }
     #nota p {
-        font-size: 22px;
+        font-size: 18px;
     }
     #nota h3 {
         font-size: 44px;
@@ -293,7 +293,9 @@ i {
     }
 
     
-    .quebra {display: none;}
+    #dados_div {
+        font-size: 18px;
+    }
 }
 @media (height < 710px){
     #inicio {
