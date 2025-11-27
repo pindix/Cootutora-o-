@@ -10,7 +10,7 @@ function calcular_preco() {
     preco.innerHTML = `Não fazemos trabalhos com esse número de páginas.`;
   } else {
     preco.innerHTML = "";
-  }
+  } 
 }
 
 

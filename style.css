@@ -11,7 +11,7 @@ html, body {
 html {
   scroll-behavior: smooth;
 }
-
+ 
 
 
 /*:::: INÍCIO :::::*/
@@ -27,16 +27,16 @@ html {
   filter: blur(6px) brightness(0.5);
 }
 .inicio_div {
-    top: 40%; left: 50%; 
+    top: 50%; left: 50%; 
     position: absolute;
     transform: translate(-50%, -50%);
     width: 40rem;
-    height: 35rem;
+    height: 50rem;
 }
 
 
 #bg-video {
-    width: 100%; height: 60%; position: absolute;
+    width: 100%; height: 50%; position: absolute;
     bottom: 0; right: 0; object-fit: cover;
 }
 
@@ -48,12 +48,13 @@ html {
     z-index: 50;
     border-radius: 20px;
     opacity: 0;
-    width: 20rem;
+    width: 30rem;
     padding: 0.8rem;
     box-shadow: 0 0 0.5rem white;
   opacity: 0;
   visibility: hidden;
   transition: all 0.7s ease;
+  font-size: 30px;
 }
 
 .show {
@@ -80,23 +81,27 @@ html {
     text-align: center; color: #003366;
 }
 #inicio h3 {
-    color: lightblue; font-size: 40px;
-    font-weight: 900;line-height: 2rem;
+    color: lightblue; font-size: 100px;
+    font-weight: 900;
+line-height: 3rem;
 }
 #inicio span {
-    color: white;font-size: 23px; letter-spacing: 3.5px;
+    color: white;
+font-size: 50px; letter-spacing: 13px;
 }
 .inicio_div p {
-    color: white; margin-top: 15px;
+    color: white; margin-top: 3rem;
+    font-size: 30px; margin-bottom: 2rem;
 }
 .reta {
     border: solid 2px lightblue; color: white;
-    padding: 0.5rem; border-radius: 20px; 
-    transition: 0.5s;
+    padding: 1rem; border-radius: 40px; 
+    transition: 0.5s; font-size: 30px;
 } 
 .bolha {
     border: solid 2px lightblue; color: white;
-    padding: 0.5rem; border-radius: 50px; transition: 0.5s;
+    padding: 1rem; border-radius: 50px; transition: 0.5s;
+    font-size: 30px;
 }
 a:hover {
     background: lightblue; color: darkblue;
@@ -113,31 +118,34 @@ a:hover {
 }
 #div_sobre {
     margin: auto;
-    width: 40rem;
-    border-radius: 20px;
-    padding: 1rem;
+    width: 45rem;
+    border-radius: 40px;
+    padding: 2.5rem;
     background: radial-gradient(circle at top left, rgba(173, 216, 230, 0.15), rgba(0, 15, 38, 0.7));
 border: 1px solid rgba(255, 255, 255, 0.1);
 box-shadow: 0 0 0.5rem white;
 }
 #sobre h3 {
-    color: lightblue; font-size: 35px; margin-bottom: 1rem;
+    color: lightblue; font-size: 60px; margin-bottom: 1rem;
     font-weight: 900
 }
 .sobre_p {
-    color: white; 
+    color: white; font-size: 40px;
 }
 
 #campo {
     width: fit-content; position: relative;
+    font-size: 40px;
 }
 #pag {
     background: none; 
     border: solid 2px white; border-radius: 20px;
     padding: 0.5rem 2rem 0.5rem 0.5rem; 
-    outline: none; width: 9rem;
+    outline: none; 
     color: white; 
     transition: 0.3s;
+    font-size: 40px;
+    width: 20rem;
 } #pag::placeholder{ color: lightblue;}
 
 #pag:hover {
@@ -155,7 +163,7 @@ box-shadow: 0 0 0.5rem white;
     margin-top: 1rem;
     padding: 0.5rem; background: lightblue;
     border-radius: 20px; width: fit-content;
-    color: dark;
+    color: dark; font-size: 40px;
 }
 /*:::: NOTA :::::*/
 #nota {
@@ -166,16 +174,18 @@ box-shadow: 0 0 0.5rem white;
     padding-top: 6rem;
 }
 #nota div {
-    margin: auto; width: 40rem;
-    padding: 3rem 1rem 2rem 1rem; border: solid 2px white;
-    border-radius: 20px;
+    margin: auto; width: 45rem;
+    padding: 2.5rem; border: solid 2px white;
+    border-radius: 40px;
 }
 #nota h3 {
     color: lightblue; font-size: 35px;
     margin-bottom: 1rem; font-weight: 900;
+    font-size: 60px;
 }
 #nota p {
-    color: white; 
+    color: white; font-size: 40px;
+    padding-bottom: 2rem;
 }
 
 /*:::: DADOS :::::*/
@@ -191,6 +201,7 @@ box-shadow: 0 0 0.5rem white;
     color: white;
     display: flex;
     align-items: center; justify-content: space-between;
+    font-size: 20px;
 }
 .info {
     margin-right: 2rem;
@@ -225,37 +236,68 @@ i {
         width: 90%;
     }
     .inicio_div {
-        height: 35rem;
+        height: 38rem;
         top: 50%;
     }
-    img {
-        height: 50%;
+    .inicio_div p {
+        font-size: 22px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
+    #inicio h3 {
+        font-size: 90px;
+    }
+    #inicio span {
+        letter-spacing: 7px;
+    }
+    
+    .reta {
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    .bolha {
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    
+
+
+
+    #div_sobre {
+        padding: 1rem; 
+    }
+    #sobre h3 {
+        font-size: 44px;
+    }
+    #sobre p, #pag {
+        font-size: 22px;
+    }
+    #pag {
+        width: 12rem;
+    }
+
+
+    #nota div {
+        padding: 1rem;
+    }
+    #nota p {
+        font-size: 22px;
+    }
+    #nota h3 {
+        font-size: 44px;
+    }
+    
+    .pop_up {
+        width: 20rem;
+        font-size: 20px;
+    }
+
+    
     .quebra {display: none;}
-    .quebra2 {display: block;}
 }
 @media (height < 710px){
     #inicio {
         min-height: 710px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
