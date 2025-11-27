@@ -37,7 +37,7 @@ html {
 
 #bg-video {
     width: 100%; height: 50%; position: absolute;
-    bottom: 0; right: 0; object-fit: cover;
+    bottom: 0; right: 0; object-fit: cover;z-index: -2;
 }
 
 
@@ -267,7 +267,7 @@ i {
         padding: 1rem; 
     }
     #sobre h3 {
-        font-size: 44px;
+        font-size: 40px;
     }
     #sobre p, #pag {
         font-size: 18px;
@@ -284,7 +284,7 @@ i {
         font-size: 18px;
     }
     #nota h3 {
-        font-size: 44px;
+        font-size: 40px;
     }
     
     .pop_up {
@@ -294,7 +294,7 @@ i {
 
     
     #dados_div {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media (height < 710px){
